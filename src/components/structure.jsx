@@ -59,7 +59,7 @@ const Structure = () => {
             <label htmlFor="password" className="form-label">Password:</label>
             <input type="password" id="password" className="form-control" />
           </div>
-          <button className="btn btn-submit">Connexion</button>
+          <button className="btn btn-submit" type="submit">Connexion</button>
           <div className="inscription">
             <p className="creat-account"><a href="#">Besoin d'aide pour créer un compte ?</a></p>
             <p className="passwd-reset"><a href="#">Mot de passe oublié</a></p>
