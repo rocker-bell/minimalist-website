@@ -49,15 +49,15 @@ const Structure = () => {
         </div>
 
         {/* Card 4: Form */}
-        <form className="card-container card4 form-group" netlify>
+        <form className="card-container card4 form-group"  name = "contact" netlify>
           <h4>Connexion</h4>
           <div className="form-group">
             <label htmlFor="name" className="form-label">Name:</label>
-            <input type="text" id="name" className="form-control" />
+            <input type="text" name = "name" id="name" className="form-control" />
           </div>
           <div className="form-group">
             <label htmlFor="password" className="form-label">Password:</label>
-            <input type="password" id="password" className="form-control" />
+            <input type="password" name= "password" id="password" className="form-control" />
           </div>
           <button className="btn btn-submit" type="submit">Connexion</button>
           <div className="inscription">
