@@ -49,7 +49,7 @@ const Structure = () => {
         </div>
 
         {/* Card 4: Form */}
-        <div className="card-container card4 form-group">
+        <form className="card-container card4 form-group" netlify>
           <h4>Connexion</h4>
           <div className="form-group">
             <label htmlFor="name" className="form-label">Name:</label>
@@ -64,7 +64,7 @@ const Structure = () => {
             <p className="creat-account"><a href="#">Besoin d'aide pour créer un compte ?</a></p>
             <p className="passwd-reset"><a href="#">Mot de passe oublié</a></p>
           </div>
-        </div>
+        </form>
       </div>
     </div>
   );
