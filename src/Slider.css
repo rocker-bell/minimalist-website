@@ -1,0 +1,97 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    outline: 1px dashed green;
+  }
+
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .nav {
+    background-color: aqua;
+  }
+
+  .container {
+    padding: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+  }
+
+  .container-main {
+    width: 90vw;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-direction: column;
+    background-color: blue;
+  }
+
+  .tabs {
+    position: relative;
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: green;
+    color: white;
+  }
+
+  .welcome-message {
+    display: block;
+    background-color: blue;
+    padding: 50px;
+    color: white;
+  }
+
+  .tab {
+    padding: 20px;
+    border: 1px dashed white;
+  }
+
+  .slider {
+    position: absolute;
+    bottom: 2px;
+    height: 5px;
+    width: 33.33%; /* Adjust based on number of tabs */
+    background-color: white;
+    transition: left 0.3s ease;
+  }
+
+  .contents {
+    border: 1px solid white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    background-color: blueviolet;
+    color: white;
+  }
+
+  .content {
+    display: none;
+    padding: 20px;
+    border: 1px dashed white;
+  }
+
+  .content.active {
+    display: block;
+  }
+
+  .footer {
+    background-color: bisque;
+  }
