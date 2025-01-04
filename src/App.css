@@ -5,7 +5,6 @@
 }
 
 .wrapper {
-  
   /* overflow-x: hidden; */
   width: 100%;
   display: flex;
@@ -14,15 +13,11 @@
   justify-content: center;
   align-items: center;
   /* width: 100vw; */
-  
 }
-
-
 
 h1 {
   font-family: Arial, Helvetica, sans-serif;
   font-size: 2em;
-  
 }
 
 .container1-nav {
@@ -37,7 +32,7 @@ h1 {
   padding: 10px;
   width: 100%;
   background-color: grey;
-  
+
   border: 1px solid black;
   display: flex;
   flex-wrap: wrap;
@@ -64,17 +59,13 @@ h1 {
   justify-content: space-evenly;
   align-items: center;
   flex-wrap: wrap;
-  
 }
 
 .list li {
-  
   display: flex;
-  
+
   justify-content: space-evenly;
 }
-
-
 
 .lists li a {
   padding: 5px 5px;
@@ -84,17 +75,14 @@ h1 {
   text-decoration: none;
 }
 
-
 .lists li a:hover {
   color: red;
   border: 1px solid green;
-
- 
 }
 
 .container2 {
   width: 90vw;
-  
+
   padding: 30px;
   display: flex;
   flex-direction: row;
@@ -104,7 +92,6 @@ h1 {
 }
 
 .card-container {
-  
   width: 200px;
   height: 400px;
   margin: 5px 5px;
@@ -123,9 +110,9 @@ h1 {
 }
 
 .card-container:hover {
-  border:1px solid rgb(110, 117, 180);
+  border: 1px solid rgb(110, 117, 180);
   border-radius: 5px;
-  box-shadow:  rgb(212, 215, 238);
+  box-shadow: rgb(212, 215, 238);
   cursor: pointer;
 }
 
@@ -151,9 +138,7 @@ h1 {
   background-color: yellow;
 }
 
-
 .form-group {
-
   margin: 30px 0;
   padding: 5px 0;
   display: flex;
@@ -182,101 +167,93 @@ h1 {
   color: blue;
 }
 
-@media screen and (max-width: 700px)  {   
+@media screen and (max-width: 700px) {
   .wrapper {
-     
-      display: flex;
-      justify-content: center;
-      align-items: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
   .container1-nav {
-      height: 400px;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      margin-bottom: 30px;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-bottom: 30px;
   }
   .container1 {
-      
-      background-color: grey;
-      padding: 20px 20px;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
+    background-color: grey;
+    padding: 20px 20px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
   }
 
   h1 {
-      color: aliceblue;
-      
+    color: aliceblue;
   }
 
   .nav {
-      margin: 20px 0;
-      height: 300px;
+    margin: 20px 0;
+    height: 300px;
   }
 
   .lists {
-      
-      margin: 10px 0;
-      padding: 10px 10px;
-      list-style: none;
-      display: flex;
-      flex-direction: column;
-      justify-content: space-evenly;
-      align-items: center;
-      flex-wrap: wrap;
-      
+    margin: 10px 0;
+    padding: 10px 10px;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
   }
 
   .lists li {
-      display: flex;
-      justify-content: center;
-      align-items: center;
-      width: 100px;
-      height: 30px;
-      margin: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 30px;
+    margin: 10px;
   }
 
   li a {
-      text-align: center;
-     width: 100px;
-     height: 30px;
+    text-align: center;
+    width: 100px;
+    height: 30px;
   }
 
   .container2 {
-      
-      display: flex;
-      flex-direction: column;
-      margin: 10px 10px;
+    display: flex;
+    flex-direction: column;
+    margin: 10px 10px;
   }
-  
+
   .card-container {
-  
-      width: 300px;
-      height: 400px;
-      margin: 5px 5px;
-      padding: 5px;
-      border: 1px solid black;
-      display: flex;
-      flex-direction: column;
-      flex-wrap: wrap;
-      justify-content: space-evenly;
-      align-items: center;
-      justify-content: center;
+    width: 300px;
+    height: 400px;
+    margin: 5px 5px;
+    padding: 5px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    align-items: center;
+    justify-content: center;
   }
 
   .card-button {
-
-      display: flex;
-      justify-content: center;
-      width: 100px;
-      padding: 20px;
-      margin-top: 30px;
-      border: 1px solid black;
-      border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    width: 100px;
+    padding: 20px;
+    margin-top: 30px;
+    border: 1px solid black;
+    border-radius: 10px;
   }
 
   .form-control {
-      width: 200px;
+    width: 200px;
   }
 }
