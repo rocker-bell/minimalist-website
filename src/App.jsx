@@ -1,7 +1,7 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
 
-import SliderPage from "./components/Sliderpage.jsx"
-import Structure from "./components/Structure.jsx";
+import SliderPage from "./components/sliderpage.jsx"
+import Structure from "./components/structure.jsx";
 
 function App() {
 
