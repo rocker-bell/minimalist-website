@@ -6,6 +6,7 @@
 }
 
 body {
+  background-color: aliceblue;
   width: 100%;
   min-height: 100vh;
   display: flex;
@@ -15,8 +16,8 @@ body {
   align-items: center;
 }
 
-.nav {
-  background-color: aqua;
+.nav-slider {
+  background-color: yellowgreen;
 }
 
 .container {

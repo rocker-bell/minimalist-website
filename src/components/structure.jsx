@@ -125,7 +125,7 @@ const Structure = () => {
         <form
           className="card-container card4 form-group"
           name="contact"
-          netlify
+          netlify= "true"
         >
           <h4>Connexion</h4>
           <input type="hidden" name="form-name" value="contact" />

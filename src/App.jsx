@@ -1,10 +1,27 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-import { useEffect, useState } from "react";
-import Slider from "./components/slider.jsx";
-import SliderPage from "./components/sliderpage.jsx";
-import Structure from "./components/structure.jsx";
+
+import SliderPage from "./components/Sliderpage.jsx"
+import Structure from "./components/Structure.jsx";
 
 function App() {
+
+
+  return (
+    <>
+      <Router>
+        {/* Wrap all Route components inside Routes */}
+        <Routes>
+          <Route path="/" element={<Structure />} />
+          <Route path="/slider" element={<SliderPage />} />
+        </Routes>
+      </Router>
+    </>
+  );
+}
+
+export default App;
+
+
   // const [showSlider, setShowSlider] = useState(false);
 
   // useEffect(() => {
@@ -27,18 +44,3 @@ function App() {
   //     quizzLink.removeEventListener("click", handleQuizzClick);
   //   };
   // }, []);
-
-  return (
-    <>
-      <Router>
-        {/* Wrap all Route components inside Routes */}
-        <Routes>
-          <Route path="/" element={<Structure />} />
-          <Route path="/slider" element={<SliderPage />} />
-        </Routes>
-      </Router>
-    </>
-  );
-}
-
-export default App;

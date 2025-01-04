@@ -15,11 +15,16 @@ const Slider = () => {
 
     let isTabClicked = false;
 
-    if (slider && tabs.length > 0) {
-      const tabWidth = tabs[0].offsetWidth;
-      slider.style.width = `${tabWidth}px`;
-      slider.style.left = `${tabs[0].offsetLeft}px`;
-    }
+    // Function to set the initial state
+    const initializeSlider = () => {
+      if (slider && tabs.length > 0) {
+        const tabWidth = tabs[0].offsetWidth;
+        slider.style.width = `${tabWidth}px`;
+        slider.style.left = `${tabs[0].offsetLeft}px`;
+      }
+    };
+
+    initializeSlider(); // Initialize on component mount
 
     const handleTabClick = (index) => {
       if (!isTabClicked) {
@@ -47,17 +52,17 @@ const Slider = () => {
       tab.addEventListener("click", () => handleTabClick(index));
     });
 
-    // Cleanup event listeners
+    // Cleanup event listeners when the component unmounts
     return () => {
-      tabs.forEach((tab) => {
+      tabs.forEach((tab, index) => {
         tab.removeEventListener("click", () => handleTabClick(index));
       });
     };
-  }, []);
+  }, []); // This will run on mount and whenever the component is updated
 
   return (
     <>
-      <nav className="nav container">Welcome to Website Deploy Page</nav>
+      <nav className="nav-slider container">Welcome to Website Deploy Page</nav>
 
       <div className="container container-main">
         <div className="tabs">

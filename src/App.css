@@ -2,6 +2,12 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  
+}
+
+body {
+  background-color: green;
+  display: flex;
 }
 
 .wrapper {
@@ -21,6 +27,7 @@ h1 {
 }
 
 .container1-nav {
+ 
   height: 150px;
   width: 100%;
   display: flex;
@@ -43,7 +50,7 @@ h1 {
 .nav {
   margin: 10px 0;
   height: 40px;
-  background-color: black;
+  background-color:  red;
   color: white;
   display: flex;
   flex-wrap: wrap;
