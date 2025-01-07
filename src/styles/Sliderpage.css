@@ -1,7 +1,23 @@
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+h1 {
+  text-align: center;
+}
+.btn-container {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  align-items: center;
+}
+
 .btn-return {
     display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
+    margin: 10px;
+    padding: 10px;
     background-color: #007bff;
     color: white;
     text-decoration: none;

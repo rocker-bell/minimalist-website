@@ -4,7 +4,7 @@ import Slider from './slider.jsx';
 
 const SliderPage = () => {
   const navigate = useNavigate();
-
+ 
   const handleReturn = () => {
     // Navigate to the main page
     navigate("/");
@@ -13,12 +13,16 @@ const SliderPage = () => {
     window.location.reload();
   };
 
-  return (
-    <div>
-      {/* Return to Main Page Button at the Top */}
-      <button onClick={handleReturn} className="btn-return">Return to Main Page</button>
 
+  return (
+    <div >
+      {/* Return to Main Page Button at the Top */}
       <h1>Slider Page</h1>
+      <div className='btn-container'>
+      <button  className="btn-return" onClick={handleReturn} >Return to Main Page</button>
+      </div>
+
+      
       <Slider />
     </div>
   );
