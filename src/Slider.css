@@ -86,13 +86,13 @@ body {
   color: white;
 }
 
-.contents.content {
+.content {
   display: none;
   padding: 20px;
   border: 1px dashed white;
 }
 
-.contents.content.active {
+.content.active {
   display: block;
 }
 

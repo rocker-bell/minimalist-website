@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Link, useNavigate } from 'react-router-dom';
 import "../styles/chrono.css";
 
 const ChronoComponent = () => {
@@ -33,8 +34,21 @@ const ChronoComponent = () => {
     localStorage.setItem("time-container", JSON.stringify(updatedTimestamps));
   };
 
+  
+  const navigate = useNavigate();
+   
+    const handleReturn = () => {
+      
+      // Navigate to the main page
+      navigate("/");
+  
+      // Trigger a page reload after navigation
+      window.location.reload();
+    };
+
   return (
     <div className="wrapper-chrono">
+      <button className="return-home-chronobtn" onClick={handleReturn}>return</button>
       <div className="contentchrono contentchrono1">
         <div id="analog">{currentTime}</div>
       </div>

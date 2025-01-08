@@ -1,5 +1,5 @@
 import { BrowserRouter as Router, Route, Routes } from "react-router-dom";
-
+import Chrono from "./components/Chrono.jsx" 
 import SliderPage from "./components/sliderpage.jsx"
 import Structure from "./components/structure.jsx";
 
@@ -13,6 +13,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Structure />} />
           <Route path="/slider" element={<SliderPage />} />
+          <Route path="/chrono" element={<Chrono />} />
         </Routes>
       </Router>
     </>

@@ -99,7 +99,7 @@ const Structure = () => {
                 <a href="#">Reference</a>
               </li>
               <li>
-                <a href="#">Exercice</a>
+                <Link to="/Chrono" >example</Link> 
               </li>
               <li>
                 <Link to="/slider">Quizz</Link>

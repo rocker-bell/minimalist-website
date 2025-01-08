@@ -2,6 +2,7 @@ import { Link, useNavigate } from 'react-router-dom';
 import "../styles/Sliderpage.css";
 import Slider from './slider.jsx';
 
+
 const SliderPage = () => {
   const navigate = useNavigate();
  
