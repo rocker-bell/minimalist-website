@@ -1,5 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../Slider.css";
+import ChronoComponent from "./Chrono"; // Correct import for the Chrono component.
 
 const Slider = () => {
   const tabsRef = useRef([]);
@@ -28,17 +29,19 @@ const Slider = () => {
 
     const handleTabClick = (index) => {
       if (!isTabClicked) {
-        welcomeMessage.style.display = "none";
+        if (welcomeMessage) welcomeMessage.style.display = "none";
         isTabClicked = true;
       }
 
       tabs.forEach((tab, i) => {
         tab.classList.remove("active");
         contents[i].classList.remove("active");
+        contents[i].style.display = "none"; // Hide all contents
       });
 
       tabs[index].classList.add("active");
       contents[index].classList.add("active");
+      contents[index].style.display = "flex"; // Show the active content
 
       if (slider) {
         const tabWidth = tabs[index].offsetWidth;
@@ -82,16 +85,30 @@ const Slider = () => {
           <div className="welcome-message" ref={welcomeMessageRef}>
             Welcome
           </div>
-          {["content1", "content2", "content3"].map((contentName, index) => (
-            <div
-              key={index}
-              className="content"
-              id={contentName}
-              ref={(el) => (contentsRef.current[index] = el)}
-            >
-              {contentName}
-            </div>
-          ))}
+          <div
+            key={0}
+            className="content active"
+            id="content1"
+            ref={(el) => (contentsRef.current[0] = el)}
+          >
+            <ChronoComponent />
+          </div>
+          <div
+            key={1}
+            className="content"
+            id="content2"
+            ref={(el) => (contentsRef.current[1] = el)}
+          >
+            Content 2
+          </div>
+          <div
+            key={2}
+            className="content"
+            id="content3"
+            ref={(el) => (contentsRef.current[2] = el)}
+          >
+            Content 3
+          </div>
         </div>
       </div>
 

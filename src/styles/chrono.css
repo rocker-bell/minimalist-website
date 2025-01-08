@@ -1,0 +1,130 @@
+.wrapper-chrono {
+    width: 100%;;
+    min-height: 300px;
+    background-color: blue;
+    border: 1px dashed white;
+    color: white;
+    margin: 30px 0;
+    padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.contentchrono {
+    width: 100%;
+    margin: 10px 0;
+    padding: 20px;
+    background-color: aliceblue;
+    color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.contentchrono2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.time-container {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.newtime-container {
+    padding: 10px 20px;
+    font-size: 20px;
+    background-color: gold;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 10px 0;
+}
+
+.btn {
+    color: aliceblue;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: medium;
+    margin: 5px;
+}
+
+.btn:hover {
+    color: yellow;
+}
+
+#start-btn {
+    background-color: green;
+}
+
+#stop-btn {
+    background-color: red;
+}
+
+.contentchrono3 {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#delete-timestamp {
+    padding: 5px 15px;
+    margin: 10px 0;
+    font-size: medium;
+    background-color: red;
+    color: yellow;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    .wrapper-chrono {
+        width: 90vw;
+        padding: 5px;
+    }
+
+    .contentchrono {
+        padding: 15px;
+    }
+
+    .newtime-container {
+        font-size: 18px;
+        padding: 8px 15px;
+
+
+        background-color: gold;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        margin: 10px 0;
+    }
+
+    .contentchrono1 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .btn {
+        padding: 8px 15px;
+        font-size: small;
+    }
+
+    #delete-timestamp {
+        padding: 5px 10px;
+        font-size: small;
+    }
+}

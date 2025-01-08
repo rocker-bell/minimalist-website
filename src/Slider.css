@@ -25,6 +25,7 @@ body {
   display: flex;
   flex-direction: row;
   align-items: center;
+  flex-direction: column;
   justify-content: space-around;
   flex-wrap: wrap;
 }
@@ -35,6 +36,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-evenly;
+  flex-wrap: wrap;
   flex-direction: column;
   background-color: blue;
 }
@@ -75,6 +77,7 @@ body {
 .contents {
   border: 1px solid white;
   padding: 10px;
+  margin: 10px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -83,13 +86,13 @@ body {
   color: white;
 }
 
-.content {
+.contents.content {
   display: none;
   padding: 20px;
   border: 1px dashed white;
 }
 
-.content.active {
+.contents.content.active {
   display: block;
 }
 
