@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from "react";
-import "../styles/Chrono.css";
+import "../styles/chrono.css";
 
 const ChronoComponent = () => {
   const [timestamps, setTimestamps] = useState([]);

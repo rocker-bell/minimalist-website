@@ -1,6 +1,6 @@
 import React, { useEffect, useRef } from "react";
 import "../Slider.css";
-import ChronoComponent from "./Chrono"; // Correct import for the Chrono component.
+import ChronoComponent from "./Chrono.jsx"; // Correct import for the Chrono component.
 
 const Slider = () => {
   const tabsRef = useRef([]);
