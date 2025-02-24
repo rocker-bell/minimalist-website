@@ -18,6 +18,7 @@ const ChronoComponent = () => {
     return () => clearInterval(interval); // Cleanup interval
   }, []);
 
+  
   const handleStop = () => {
     const newTimestamp = {
       id: timestamps.length + 1,
@@ -33,6 +34,14 @@ const ChronoComponent = () => {
     setTimestamps(updatedTimestamps);
     localStorage.setItem("time-container", JSON.stringify(updatedTimestamps));
   };
+
+
+  const handleclear = () => {
+    localStorage.removeItem("time-container")
+    window.location.reload();
+ 
+   }
+ 
 
   
   const navigate = useNavigate();
@@ -55,8 +64,10 @@ const ChronoComponent = () => {
       <div className="contentchrono contentchrono2">
         <button className="btn" id="start-btn">Start</button>
         <button className="btn" id="stop-btn" onClick={handleStop}>
+        
           Stop
         </button>
+        <button className="btn" id="stop-btn" onClick={handleclear}>clear</button>
       </div>
       <div className="contentchrono contentchrono3">
         {timestamps.map((data) => (
