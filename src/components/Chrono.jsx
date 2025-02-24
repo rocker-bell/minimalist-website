@@ -38,7 +38,7 @@ const ChronoComponent = () => {
 
   const handleclear = () => {
     localStorage.removeItem("time-container")
-    window.location.reload();
+    navigate("/chrono");
  
    }
  
